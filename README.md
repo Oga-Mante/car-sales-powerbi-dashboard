@@ -69,7 +69,7 @@ One fact table (car_data, 23,906 rows) with a related calendar table (Calendar T
 
 ## Data Source
 Car Sales Report dataset by missionjee on Kaggle: https://www.kaggle.com/datasets/missionjee/car-sales-report
-Licence: PASTE THE LICENCE FROM THE KAGGLE PAGE HERE
+Licence: not stated on the Kaggle page. The data is linked here and not redistributed as a separate file.
 The data is public and appears to be synthetic.
 
 ## Tools
