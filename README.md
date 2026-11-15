@@ -30,12 +30,12 @@ An interactive Power BI report on 23,906 car sales across 2022 and 2023. It show
 ## The Dashboard
 Two pages, with a page menu and Year, body style, dealer and transmission slicers.
 
-Overview
+**Overview**
 - Year to date sales, average price and cars sold, each with the change against last year in value and percent, plus month to date figures
 - Weekly sales trend with the highest and lowest weeks marked
 - Year to date sales by body style and by colour, cars sold by dealer region on a map, and a company table with average price, cars sold and sales
 
-Details
+**Details**
 - The individual sales records (car, company, model, colour, dealer, date and price) under the same KPIs and filters
 
 ![Details page](images/details.png)
@@ -43,7 +43,8 @@ Details
 ## How to Use
 1. Download Car_Sales_BI.pbix and open it in Power BI Desktop (free from Microsoft).
 2. Select a year in the Year slicer. The year to date figures compare the selected year with the year before.
-3. Use the body style, dealer and transmission slicers to filter every visual, and the menu on the left to switch pages.
+3. Use the body style, dealer and transmission slicers to filter every visual, and the menu to switch pages.
+
 The report contains its own data, so it opens without a refresh. To refresh it from the source file, point the Power Query source to your copy of the Excel file.
 
 ## Data Model
@@ -59,17 +60,16 @@ One fact table (car_data, 23,906 rows) with a related calendar table (Calendar T
 - No cost or profit data, so the analysis covers revenue and volume only.
 - No customer identifier, so repeat purchase and customer loyalty cannot be analysed.
 - The price effect and volume effect are a simple split and do not separate out product mix.
-- The last point on the weekly trend (week 53) covers one day only, 31 December.
+- Week 53 of the weekly trend covers one day only (31 December, about $1.0M), so the lowest point marked on the chart is a partial week and not a real low. The lowest full week is week 2, at about $2.3M.
 - The model is a single flat table. A star schema would be the next improvement.
 
 ## Files
 - Car_Sales_BI.pbix, the Power BI report
-- Car_Sales_Dashboard.pdf, a PDF export of both pages
 - images/, screenshots of each page
 
 ## Data Source
 Car Sales Report dataset by missionjee on Kaggle: https://www.kaggle.com/datasets/missionjee/car-sales-report
-Licence: [copy it from the Kaggle page]
+Licence: PASTE THE LICENCE FROM THE KAGGLE PAGE HERE
 The data is public and appears to be synthetic.
 
 ## Tools
